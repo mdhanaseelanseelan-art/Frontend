@@ -1,0 +1,294 @@
+
+.success-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f7fb;
+  color: #172b4d;
+}
+
+.success-header {
+  min-height: 80px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.success-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.success-logo {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #123b70;
+  color: #fff;
+  font-weight: 800;
+}
+
+.success-brand h2 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.success-brand p {
+  margin: 0;
+  color: #758398;
+  font-size: 11px;
+}
+
+.success-portal {
+  padding: 8px 12px;
+  border: 1px solid #dce7f4;
+  border-radius: 6px;
+  background: #f5f9ff;
+  color: #245b92;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.success-main {
+  flex: 1;
+  width: min(700px, 92%);
+  margin: 0 auto;
+  padding: 45px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-card {
+  width: 100%;
+  padding: 38px;
+  border: 1px solid #e0e7f0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 35px #173c660b;
+  text-align: center;
+}
+
+.success-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e6f7ee;
+  color: #168653;
+}
+
+.success-label {
+  color: #168653;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.success-card h1 {
+  margin: 15px 0;
+  font-size: clamp(26px, 4vw, 35px);
+  line-height: 1.35;
+  letter-spacing: -0.8px;
+}
+
+.success-card h1 span {
+  color: #168653;
+}
+
+.success-description {
+  max-width: 490px;
+  margin: 0 auto 25px;
+  color: #6b7b91;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.success-id-box {
+  padding: 20px;
+  border: 1px dashed #a7cbb8;
+  border-radius: 10px;
+  background: #f2fbf6;
+}
+
+.success-id-box > span {
+  display: block;
+  color: #547564;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.success-id-box strong {
+  display: block;
+  margin: 10px 0;
+  color: #137747;
+  font-size: 24px;
+  letter-spacing: 1px;
+  overflow-wrap: anywhere;
+}
+
+.success-id-box p {
+  margin: 0;
+  color: #6e8679;
+  font-size: 11px;
+}
+
+.success-details {
+  margin-top: 28px;
+  text-align: left;
+}
+
+.success-details h2 {
+  margin: 0 0 13px;
+  font-size: 16px;
+}
+
+.success-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 13px 0;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 12px;
+}
+
+.success-detail-row > span {
+  flex-shrink: 0;
+  color: #758398;
+}
+
+.success-detail-row strong {
+  max-width: 65%;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.success-status {
+  color: #168653;
+}
+
+.success-notice {
+  margin-top: 20px;
+  padding: 13px;
+  border-radius: 7px;
+  background: #fff8e8;
+  color: #7b6127;
+  font-size: 11px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.success-actions {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.success-actions button {
+  min-height: 46px;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.success-primary {
+  border: 1px solid #174d86;
+  background: #174d86;
+  color: #fff;
+}
+
+.success-primary:hover {
+  background: #103b6c;
+}
+
+.success-secondary {
+  border: 1px solid #cbd8e8;
+  background: #fff;
+  color: #245b92;
+}
+
+.success-secondary:hover {
+  background: #f2f7fd;
+}
+
+.success-footer {
+  padding: 24px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+  color: #7a899d;
+  font-size: 10px;
+}
+
+.success-footer strong {
+  color: #244263;
+  font-size: 12px;
+}
+
+.success-footer p {
+  margin: 5px 0 0;
+  line-height: 1.7;
+}
+
+.success-footer > span {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .success-header {
+    padding: 14px 5%;
+  }
+
+  .success-brand h2 {
+    font-size: 10px;
+  }
+
+  .success-brand p {
+    font-size: 9px;
+  }
+
+  .success-portal {
+    padding: 7px;
+    font-size: 8px;
+  }
+
+  .success-main {
+    padding: 25px 0;
+  }
+
+  .success-card {
+    padding: 25px 18px;
+  }
+
+  .success-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .success-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 5%;
+  }
+
+  .success-footer > span {
+    text-align: left;
+  }
+}

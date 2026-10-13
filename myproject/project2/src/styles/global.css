@@ -1,0 +1,60 @@
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --page-bg: #f5f7fb;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text-main);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.job-card {
+  transition: box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  box-shadow: 0 8px 24px rgb(15 23 42 / 8%);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+@media (max-width: 768px) {
+  main.container-fluid {
+    padding: 16px !important;
+  }
+}

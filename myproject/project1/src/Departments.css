@@ -1,0 +1,389 @@
+
+.department-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #172b4d;
+}
+
+.dept-header {
+  min-height: 82px;
+  padding: 16px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dept-brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.dept-logo {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #123b70;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.dept-brand h2 {
+  margin: 0 0 5px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.dept-brand p {
+  margin: 0;
+  color: #758398;
+  font-size: 11px;
+}
+
+.dept-header-label {
+  padding: 9px 12px;
+  border: 1px solid #dce7f4;
+  border-radius: 6px;
+  color: #245b92;
+  background: #f5f9ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.dept-main {
+  width: min(1120px, 88%);
+  margin: 0 auto;
+  padding: 32px 0 28px;
+}
+
+.dept-breadcrumb {
+  margin-bottom: 30px;
+  color: #7a899d;
+  font-size: 12px;
+}
+
+.dept-breadcrumb strong {
+  color: #275b92;
+}
+
+.dept-intro {
+  margin-bottom: 35px;
+}
+
+.dept-eyebrow {
+  color: #2671b9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.dept-intro h1 {
+  margin: 15px 0;
+  color: #172b4d;
+  font-size: clamp(32px, 4vw, 45px);
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+}
+
+.dept-intro h1 span {
+  color: #2671b9;
+}
+
+.dept-intro > p {
+  max-width: 580px;
+  color: #687990;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.dept-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dept-toolbar h2 {
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.dept-toolbar p {
+  margin: 0;
+  color: #7a899d;
+  font-size: 12px;
+}
+
+.dept-search {
+  width: min(290px, 100%);
+  height: 43px;
+  padding: 0 14px;
+  border: 1px solid #dce4ee;
+  border-radius: 7px;
+  outline: none;
+  background: #fff;
+  color: #172b4d;
+  font: inherit;
+  font-size: 12px;
+}
+
+.dept-search:focus {
+  border-color: #3479bd;
+  box-shadow: 0 0 0 3px #3479bd18;
+}
+
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.dept-card {
+  min-width: 0;
+  min-height: 250px;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #e0e7f0;
+  border-radius: 12px;
+  background: #fff;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.dept-card:hover {
+  border-color: #a9c5e6;
+  box-shadow: 0 7px 22px #173c6610;
+  transform: translateY(-2px);
+}
+
+.dept-card.selected {
+  border: 2px solid #2671b9;
+  padding: 20px;
+  background: #f7fbff;
+  box-shadow: 0 0 0 3px #2671b915;
+}
+
+.dept-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.dept-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #edf4fd;
+  font-size: 24px;
+}
+
+.dept-radio {
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d5deea;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dept-card.selected .dept-radio {
+  border-color: #2671b9;
+  background: #2671b9;
+}
+
+.dept-card h3 {
+  margin: 0 0 9px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.dept-description {
+  margin: 0 0 14px;
+  color: #708097;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.dept-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 17px;
+}
+
+.dept-chip {
+  padding: 5px 7px;
+  border-radius: 5px;
+  background: #f1f5fa;
+  color: #53677f;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.dept-select-label {
+  margin-top: auto;
+  padding-top: 13px;
+  border-top: 1px solid #edf0f5;
+  color: #2869a7;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.dept-empty {
+  padding: 35px;
+  border: 1px dashed #cbd6e4;
+  border-radius: 10px;
+  background: #fff;
+  color: #687990;
+  text-align: center;
+}
+
+.dept-bottom {
+  margin-top: 28px;
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #e1e8f1;
+  border-radius: 11px;
+  background: #fff;
+}
+
+.dept-bottom p {
+  margin: 0;
+  color: #708097;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.dept-bottom strong {
+  color: #253c5b;
+}
+
+.dept-continue {
+  min-height: 46px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 7px;
+  background: #174d86;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dept-continue:hover:not(:disabled) {
+  background: #103b6c;
+}
+
+.dept-continue:disabled {
+  background: #aab9ca;
+  cursor: not-allowed;
+}
+
+.dept-disclaimer {
+  margin: 24px 0 0;
+  color: #8a97a8;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (max-width: 900px) {
+  .dept-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dept-main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 580px) {
+  .dept-header {
+    padding: 14px 5%;
+  }
+
+  .dept-brand {
+    gap: 9px;
+  }
+
+  .dept-logo {
+    width: 39px;
+    height: 39px;
+    font-size: 15px;
+  }
+
+  .dept-brand h2 {
+    font-size: 10px;
+  }
+
+  .dept-brand p {
+    max-width: 190px;
+    font-size: 9px;
+  }
+
+  .dept-header-label {
+    padding: 7px;
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+
+  .dept-main {
+    padding-top: 25px;
+  }
+
+  .dept-intro h1 {
+    font-size: 32px;
+  }
+
+  .dept-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .dept-search {
+    width: 100%;
+  }
+
+  .dept-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dept-card {
+    min-height: 220px;
+  }
+
+  .dept-bottom {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .dept-continue {
+    width: 100%;
+  }
+}

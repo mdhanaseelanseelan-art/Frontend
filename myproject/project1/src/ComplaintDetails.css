@@ -1,0 +1,341 @@
+
+.complaint-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #172b4d;
+}
+
+.complaint-header {
+  min-height: 80px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.complaint-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.complaint-logo {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #123b70;
+  color: #fff;
+  font-weight: 800;
+}
+
+.complaint-brand h2 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.complaint-brand p {
+  margin: 0;
+  color: #758398;
+  font-size: 11px;
+}
+
+.complaint-portal-label {
+  padding: 8px 12px;
+  border: 1px solid #dce7f4;
+  border-radius: 6px;
+  color: #245b92;
+  background: #f5f9ff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.complaint-main {
+  width: min(900px, 90%);
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.back-button {
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: #2869a7;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.complaint-intro {
+  margin: 24px 0;
+}
+
+.complaint-eyebrow {
+  color: #2671b9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.complaint-intro h1 {
+  margin: 12px 0;
+  font-size: clamp(30px, 4vw, 40px);
+  letter-spacing: -1px;
+}
+
+.complaint-intro p {
+  color: #6b7b91;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.selected-department {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding: 17px 20px;
+  border: 1px solid #d7e6f7;
+  border-radius: 10px;
+  background: #edf5ff;
+}
+
+.selected-department-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 22px;
+}
+
+.selected-department small {
+  color: #5e7593;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.selected-department h3 {
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
+.complaint-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-section {
+  padding: 25px;
+  border: 1px solid #e0e7f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-bottom: 24px;
+}
+
+.section-heading > span {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #eaf2fc;
+  color: #245e9a;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.section-heading h2 {
+  margin: 1px 0 6px;
+  font-size: 17px;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #7a899d;
+  font-size: 12px;
+}
+
+.complaint-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 17px;
+}
+
+.complaint-field {
+  min-width: 0;
+}
+
+.complaint-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.complaint-field label {
+  display: block;
+  margin-bottom: 9px;
+  color: #34445c;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.complaint-field input,
+.complaint-field select,
+.complaint-field textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 12px;
+  border: 1px solid #dce4ee;
+  border-radius: 7px;
+  outline: none;
+  background: #fff;
+  color: #24364d;
+  font: inherit;
+  font-size: 12px;
+}
+
+.complaint-field textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.complaint-field input:focus,
+.complaint-field select:focus,
+.complaint-field textarea:focus {
+  border-color: #3479bd;
+  box-shadow: 0 0 0 3px #3479bd18;
+}
+
+.complaint-field input:disabled,
+.complaint-field select:disabled {
+  background: #f0f3f7;
+  cursor: not-allowed;
+}
+
+.character-count,
+.upload-hint {
+  display: block;
+  margin-top: 7px;
+  color: #8390a1;
+  font-size: 10px;
+}
+
+.character-count {
+  text-align: right;
+}
+
+.complaint-error {
+  padding: 12px;
+  border-radius: 7px;
+  background: #fff0f0;
+  color: #a32929;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.complaint-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px;
+  border: 1px solid #e0e7f0;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.complaint-actions p {
+  margin: 0;
+  color: #718096;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.complaint-actions strong {
+  color: #253c5b;
+}
+
+.complaint-submit {
+  min-height: 45px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 7px;
+  background: #174d86;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.complaint-submit:hover {
+  background: #103b6c;
+}
+
+.complaint-disclaimer {
+  margin: 24px 0 0;
+  color: #8a97a8;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  .complaint-header {
+    padding: 14px 5%;
+  }
+
+  .complaint-brand h2 {
+    font-size: 10px;
+  }
+
+  .complaint-brand p {
+    font-size: 9px;
+  }
+
+  .complaint-portal-label {
+    padding: 7px;
+    font-size: 8px;
+  }
+
+  .complaint-main {
+    width: 92%;
+  }
+
+  .form-section {
+    padding: 19px 15px;
+  }
+
+  .complaint-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .complaint-field.full-width {
+    grid-column: auto;
+  }
+
+  .complaint-actions {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .complaint-submit {
+    width: 100%;
+  }
+}
